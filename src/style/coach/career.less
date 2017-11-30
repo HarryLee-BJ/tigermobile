@@ -1,0 +1,174 @@
+.basebg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.career {
+  position: relative;
+  padding: 0.08rem;
+  .main {
+    position: relative;
+    z-index: 2;
+  }
+  .mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    .basebg;
+    filter: blur(10px);
+    opacity: 0.48;
+  }
+}
+.header {
+  display: flex;
+  .left {
+    margin-right: 0.25rem;
+    .avatar {
+      width: 0.56rem;
+      height: 0.56rem;
+      border-radius: 50%;
+      box-shadow: 0px 0 0 1px #fff;
+      margin-bottom: 0.16rem;
+    }
+    .course {
+      padding: 0.075rem 0;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    .course {
+      color: rgba(255, 255, 255, 1);
+      div:nth-child(1) {
+        color: rgba(255, 255, 255, 0.64);
+        font-size: 14px;
+      }
+      div:nth-child(2) {
+        font-size: 20px;
+      }
+      div:nth-child(3) {
+        font-size: 12px;
+      }
+    }
+  }
+  .right {
+    .name,
+    .pro {
+      display: inline-block;
+      vertical-align: baseline;
+    }
+    .name {
+      font-size: 0.18rem;
+      margin-bottom: 0.08rem;
+    }
+    .pro {
+      width: 0.24rem;
+      height: 0.12rem;
+      border-radius: 2px;
+      margin-left: 0.04rem;
+      background-image: url(../../assets/PRO.png);
+      .basebg;
+    }
+    .address {
+      font-size: 0.13rem;
+      color: rgba(255, 255, 255, 0.64);
+      margin-bottom: 0.15rem;
+      span {
+        margin-right: 0.08rem;
+      }
+      .gym {
+        padding-left: 0.08rem;
+        border-left: 2px solid rgba(255, 255, 255, 0.64);
+      }
+    }
+    .exp {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      color: rgba(255, 255, 255, 0.64);
+      font-size: 0.12rem;
+      line-height: 0.17rem;
+      li {
+        padding: 0.015rem 0.08rem;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 100px;
+        margin-bottom: 0.12rem;
+        margin-right: 0.08rem;
+      }
+    }
+  }
+}
+.line {
+  .part {
+    .item {
+      display: flex;
+      align-items: flex-start;
+    }
+    .item:not(:last-child) {
+      .certificate {
+        border-left: 1px solid rgba(255, 255, 255, 0.16);
+      }
+    }
+  }
+  .time {
+    width: 0.52rem;
+    padding-left: 0.04rem;
+    margin-right: 0.21rem;
+    margin-left: 0.16rem;
+    padding-right: 0.09rem;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    font-size: 0.1rem;
+    color: #ffffff;
+    line-height: 0.18rem;
+    background-image: url('../../assets/coach/year.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+}
+.certificate {
+  padding-left: 0.22rem;
+  padding-bottom: 0.16rem;
+  position: relative;
+  .title {
+    font-family: PingFang-SC-Regular;
+    font-size: 0.14rem;
+    line-height: 0.2rem;
+    margin-bottom: 0.12rem;
+    color: #ffffff;
+    letter-spacing: 0;
+  }
+  .imgbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    width: 1.08rem;
+    height: 0.8rem;
+    margin-right: 0.08rem;
+    margin-bottom: 0.08rem;
+    border-radius: 0.08rem;
+  }
+}
+.certificate {
+  .dot {
+    width: 0.18rem;
+    height: 0.18rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-image: url('../../assets/coach/dotD.png');
+    background-color: #454545;
+  }
+  .dot_title {
+    background-image: url('../../assets/coach/dotT.png');
+  }
+}

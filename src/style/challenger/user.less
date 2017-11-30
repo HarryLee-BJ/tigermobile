@@ -1,0 +1,146 @@
+.borderR {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.user{
+    padding: .12rem .08rem;
+    background-color: rgba(0,0,0,.1);
+    .header{
+        font-size: .14rem;
+        line-height: .2rem;
+        margin-bottom: .12rem;
+    }
+}
+
+.item-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.item{
+    width: 1.75rem;
+    background-color: rgba(0,0,0,.2);
+    border-radius: .04rem;
+    overflow: hidden;
+    margin-bottom: .08rem;
+    position: relative;
+    .img{
+        width: 1.75rem;
+        height: 1.75rem;
+        display: block;
+        margin-bottom: .08rem;
+    }
+    .info{
+        padding: .08rem;
+
+    }
+}
+
+
+.isShowTiger,
+.sportType{
+    position: absolute;
+    width: .16rem;
+    height: .16rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 10;
+    top: .085rem;
+}
+
+.isShowTiger{
+    background-image: url(../../assets/sportSe/logo.png);
+    right: .085rem;
+}
+.sportType{
+    right: .257rem;
+}
+.txt{
+    
+    .title{
+        font-size: 13px;
+        color: #3D9EEE;
+        line-height: .18rem;
+        margin-bottom: .05rem;
+    }
+
+    .p{
+        opacity: 0.64;
+        font-size: 13px;
+        color: #FFFFFF;
+        line-height: .18rem;
+        max-height: .38rem;
+        overflow: hidden;
+        margin-bottom: .16rem;
+    }
+}
+
+.bottom{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .avatar{
+        width: .24rem;
+        height: .24rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 50%;
+    }
+
+  
+}
+
+.r{
+    display: flex;
+    align-items: center;
+    .like{
+        width: .24rem;
+        height: .24rem;
+        display: block;
+        margin-right: .05rem;
+        transition: all .3s;
+    }
+
+
+    .num{
+        font-size: .13rem;
+    }
+}
+
+.r:active {
+    .like{
+        transform: scale(1.5);
+    }
+}
+
+
+
+@media  screen and (min-width: 380px) and (max-width: 420px){
+    .item{
+        width: 1.95rem;
+        .img{
+            width: 1.95rem;
+            height: 1.95rem;
+        }
+    }
+
+    .bottom{
+        .avatar{
+            width: .264rem;
+            height: .264rem;
+        }
+    }
+}

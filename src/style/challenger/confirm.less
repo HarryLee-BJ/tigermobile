@@ -1,0 +1,105 @@
+.model-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .model {
+    position: relative;
+    z-index: 200;
+    width: 2.95rem;
+    margin: 1.96rem auto 0;
+    border-radius: 8px;
+    background-image: linear-gradient(-270deg, #ab5bff 2%, #414bff 97%);
+  }
+  .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.72;
+    background: #000000;
+  }
+  .reward {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: -0.48rem;
+    transform: translateX(-50%);
+    width: 0.96rem;
+    height: 0.96rem;
+    object-fit: contain;
+  }
+  .cont {
+    text-align: center;
+    padding: 0.64rem 0.16rem 0.16rem 0.16rem;
+    .title {
+      font-size: 0.18rem;
+      line-height: 0.25rem;
+      margin-bottom: 0.08rem;
+    }
+    .notes {
+      font-size: 14px;
+      color: #ffffff;
+      opacity: 0.64;
+      line-height: 0.2rem;
+      margin-bottom: 0.17rem;
+    }
+  }
+  
+  .info {
+    .ipt-wrapper {
+      border-radius: 0.04rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .ipt-wrapper:not(last-child) {
+      margin-bottom: 0.08rem;
+    }
+    .ipt,
+    .textarea {
+      display: block;
+      font-size: 0.14rem;
+      width: 100%;
+      box-sizing: border-box;
+      background-image: linear-gradient(-270deg, #b06bff 2%, #575eff 97%);
+      color: #fff;
+    }
+    .ipt {
+      line-height: 0.4rem;
+      padding-left: 0.12rem;
+    }
+    .textarea {
+      min-height: 0.64rem;
+      padding: 0.12rem;
+      border: none;
+    }
+  }
+  
+  .bonus {
+    position: absolute;
+    left: 50%;
+    bottom: -0.64rem;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 0.32rem;
+    font-size: 0.16rem;
+    padding: 0 0.28rem;
+    background-color: #666;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+  }
+  
+  .bonus:active {
+    opacity: 0.64;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #fff;
+    opacity: 0.64;
+  }

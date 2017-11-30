@@ -1,0 +1,140 @@
+.star{
+    padding: .12rem .08rem;
+    background-color: rgba(0,0,0,.1);
+    .header{
+        font-size: .14rem;
+        line-height: .2rem;
+        margin-bottom: .12rem;
+    }
+    .body{
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;     
+    }
+}
+
+
+.mask{
+    opacity: .2;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(-270deg, #414BFF 2%, #AB5BFF 97%);
+}
+
+
+.cont{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    overflow: hidden;
+    .video{
+        display: block;
+        object-fit:  cover;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+    .info{
+        padding: .3rem .1rem 0;
+        box-sizing: border-box;
+        .avatar{
+            width: .6rem;
+            height: .6rem;
+            display: block;
+            object-fit:  cover;
+            border: 2px solid #fff;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-bottom: .12rem;
+        }
+        .username{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: .12rem;
+            font-size: .16rem;
+        }
+        .pro{
+            background-image: url(../../assets/PRO.png);
+            display: block;
+            width: .24rem;
+            height: .12rem;
+            background-size:  cover;
+            margin-left: .02rem;
+        }
+
+
+    }
+}
+
+.item-wrapper{
+    overflow: scroll;
+    width: 1.5rem;
+    margin: 0 auto;
+    .items{
+        display: flex;
+        padding: 0 .14rem;
+        margin: 0 auto;
+        .item{
+            font-size: .11rem;
+            line-height: .18rem;
+            border: 1px solid #fff;
+            opacity: .48;
+            border-top-left-radius: 2em;
+            border-top-right-radius: 2em;
+            border-bottom-left-radius: 2em;
+            border-bottom-right-radius: 2em;
+            padding:  0 .08rem;
+            margin: 0 .04rem .08rem;
+            flex-shrink: 0;
+        }
+    }
+}
+
+
+
+@media  screen and (min-width: 380px) and (max-width: 420px){
+    .info{
+        padding: .33rem .11rem 0;
+        box-sizing: border-box;
+        .avatar{
+            width: .66rem;
+            height: .66rem;
+            display: block;
+            object-fit:  cover;
+            border: 2px solid #fff;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-bottom: .144rem;
+        }
+        .username{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: .132rem;
+            font-size: .18rem;
+        }
+        .pro{
+            background-image: url(../../assets/PRO.png);
+            display: block;
+            width: .264rem;
+            height: .132rem;
+            background-size:  cover;
+            margin-left: .022rem;
+        }
+
+
+    }
+}
+
+.video,.info{
+    max-width:3.7rem;
+    max-height: 3.7rem;
+}

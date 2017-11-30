@@ -1,0 +1,38 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "destructuring": true,
+            "spread": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "vue",
+        "plugin:flowtype/recommended"
+    ],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "plugins": [
+        "react",
+        "html",
+        "vue",
+        "flowtype"
+    ],
+    "rules": {
+        "no-console": "off",
+        "semi": "off",
+        "space-before-blocks": "off",
+        "space-before-function-paren": "off",
+        "quotes": "off",
+        "camelcase": "off",
+        "object-curly-spacing": "off"
+    }
+}

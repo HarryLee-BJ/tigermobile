@@ -1,0 +1,276 @@
+.borderR {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+  }
+  .header {
+    background-image: url('http://coach-10061631.image.myqcloud.com/94a4634b-135c-4758-acdd-6d9a150090a2');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .header-wrapper {
+      padding-top: 0.64rem;
+      padding-bottom: 0.5rem;
+      .activity {
+        position: relative;
+        display: inline-block;
+        padding-right: .12rem;
+        border-radius: 0 83.33px 83.33px 0;
+        overflow: hidden;
+        margin-bottom: 0.185rem;
+        .cont {
+          position: relative;
+          display: flex;
+          align-items: center;
+          line-height: 0.32rem;
+          padding-left: 0.08rem;
+          font-size: 0.14rem;
+          .num {
+            font-size: 0.24rem;
+            padding-left: 0.06rem;
+            line-height: 0.32rem;
+            font-family: AvenirNextCondensed-BoldItalic;
+          }
+        }
+        .mask {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background-image: linear-gradient(-1deg, #414bff 1%, #ab5bff 100%);
+          opacity: 0.2;
+        }
+      }
+  
+      .medal {
+        margin: 0 auto;
+        position: relative;
+        padding: 0.6rem .16rem 0;
+        .icon-cont {
+          position: relative;
+          .icon {
+            width: .54rem;
+            height: .60rem;
+            position: absolute;
+            top: -0.63rem;
+            // z-index: 10;
+            transform: translate(-50%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+  
+          .icon:nth-child(1) {
+            left: 25%;
+            // background-image: url('../../assets/challenger/1.png');
+          }
+          .icon:nth-child(2) {
+            left: 50%;
+            // background-image: url('../../assets/challenger/2.png');
+          }
+          .icon:nth-child(3) {
+            left: 75%;
+            // background-image: url('../../assets/challenger/3.png');
+          }
+  
+          .icon:after {
+            content: " ";
+            display: block;
+            width: 0.04rem;
+            height: 0.06rem;
+            position: absolute;
+            left: 50%;
+            top: 0.62rem;
+            transform: translate(-50%);
+            background-image: linear-gradient(-180deg, #FBDA61 0%, #F76B1C 100%);
+            .borderR;
+          }
+  
+          .icon:before {
+            position: absolute;
+            left: 50%;
+            top: 0.8rem;
+            transform: translate(-50%);
+            font-size: 0.14rem;
+          }
+
+  
+          .iconGary::after {
+            background-image: linear-gradient(#6a5c5a, #69454b);
+          }
+
+          .iconGary::before {
+            color: #9996a7;
+          }
+  
+          .icon:nth-child(1):before {
+            content: "100";
+          }
+          .icon:nth-child(2):before {
+            content: "150";
+          }
+          .icon:nth-child(3):before {
+            content: "200";
+          }
+        }
+  
+        .line-wrapper {
+          height: 0.04rem;
+          background-image: linear-gradient(#6a5c5a, #69454b);
+          .borderR;
+          .line {
+            background-image: linear-gradient(-180deg, #FBDA61 0%, #F76B1C 100%);
+            .borderR;
+            z-index: 10;
+            height: 0.04rem;
+            transition: all 3s;
+            animation-timing-function: ease;
+          }
+        }
+      }
+    }
+  }
+  
+  .cards {
+    padding: 0.24rem 0.16rem;
+    .item {
+      padding: 0.12rem 0.16rem;
+      border-radius: 0.08rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-bottom: 0.16rem;
+      .info {
+        max-width: 2rem;
+        .title {
+          font-size: 0.14rem;
+          line-height: 0.2rem;
+          margin-bottom: 0.02rem;
+        }
+        .p {
+          font-size: 0.13rem;
+          line-height: 0.18rem;
+          opacity: 0.64;
+        }
+      }
+  
+      .btn {
+        background-image: linear-gradient(-270deg, #414bff 2%, #ab5bff 97%);
+        border-radius: 1rem;
+        width: 0.72rem;
+        line-height: 0.24rem;
+        text-align: center;
+        font-size: 0.13rem;
+        transition: all 0.3s;
+      }
+  
+      .btn:active {
+        transform: scale(1.2);
+        opacity: 0.6;
+      }
+
+
+    }
+
+    .daily{
+      background-image: url('http://coach-10061631.image.myqcloud.com/6a215d5a-95a7-43ad-98cd-ae1c26eca1e5');
+      background-size:  cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+
+.white-btn{
+    border-radius: 1rem;
+    width: 0.72rem;
+    line-height: 0.24rem;
+    text-align: center;
+    font-size: 0.13rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    position: relative;
+    .mask{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        opacity: .24;
+    }
+    .txt{
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.white-btn:active {
+    transform: scale(1.2);
+    opacity: 0.6;
+}
+
+.disc-item{
+    background-image: linear-gradient(-180deg, #FBDA61 0%, #F76B1C 100%);
+    border: 1px solid rgba(255,255,255,0.10);
+    padding: .11rem .06rem .10rem;
+    border-radius: 4px;
+    font-size: .12rem;
+    line-height: .17rem;
+    display: inline-block;
+    position: absolute;
+    top: -25%;
+    z-index: 100;
+    width: 1.71rem;
+    box-sizing: border-box;
+}
+.disc-item div:nth-child(1){
+  text-align: center;
+}
+.disc-item:nth-child(1){
+  left: 25%;
+  transform: translate(.37rem);
+}
+.disc-item:nth-child(2){
+  left: 50%;
+  transform: translate(-50%);
+}
+.disc-item:nth-child(3){
+  left: 75%;
+  transform: translate(-2.08rem);
+}
+
+
+
+// .disc-item:nth-child(1):after,
+// .disc-item:nth-child(3):after{
+//   content: ' ';
+//   display: block;
+//   width: .1rem;
+//   height: .1rem;
+//   background-color: #F76B1C;
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-.05rem);
+//   transform: rotateZ(45deg);
+// }
+
+
+// .disc-item:nth-child(1):after{
+//   left: -.05rem;
+  
+// }
+// .disc-item:nth-child(3):after{
+//   right: -.05rem;
+// }
+
+.disc-mask{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
