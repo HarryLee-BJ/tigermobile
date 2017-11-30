@@ -40,7 +40,7 @@ const notFound = r => require.ensure([], () => r(require('@/view/404.vue')), 'SI
 Vue.use(Router);
 
 export default new Router({
-
+  mode: 'history',
   routes: [
     // SWQ
     {
